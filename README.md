@@ -68,6 +68,10 @@ network={
 ## Spoof MAC address
 We'll need to spoof the MAC address on the WAN port (interface `eth4` on the Unifi Cloud Gateway Ultra) to successfully authenticate with ATT with our certificates.  Spoofing MAC address on the Unifi dashboard works for the Unifi Cloud Gateway Ultra as of Unifi Cloud Gateway Ultra firmware version 3.2.12.  If it does not work follow the instructions below. 
 
+If you're spoofing the  MAC Address via the console, it should look like the below image (Add the MAC address of your AT&T Gateway):
+
+![Alt text](UCGCloneMacAddress.jpg)
+
 I know there's an option in the Unifi dashboard to spoof MAC address on the Internet (WAN) network, but this didn't seem to work when I tested it. (If anyone does test this successfully without needing the following, please let me know).
 
 Instead, I had to manually set it up, based on these [instructions to spoof mac address](https://www.xmodulo.com/spoof-mac-address-network-interface-linux.html).
